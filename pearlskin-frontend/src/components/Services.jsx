@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Clock, Star } from 'lucide-react';
 import { servicesData } from '../data/index.js';
 
 const Services = () => {
@@ -25,19 +24,13 @@ const Services = () => {
           {servicesData.map((service) => (
             <motion.div
               key={service.id}
-              className={`service-card ${service.popular ? 'popular' : ''}`}
+              className="service-card"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
               whileHover={{ y: -10, scale: 1.02 }}
             >
-              {service.popular && (
-                <div className="popular-badge">
-                  <Star size={16} />
-                  Most Popular
-                </div>
-              )}
 
               <div className="service-image">
                 <img
@@ -63,23 +56,7 @@ const Services = () => {
                   </ul>
                 </div>
 
-                <div className="service-details">
-                  <div className="duration">
-                    <Clock size={16} />
-                    <span>{service.duration}</span>
-                  </div>
-                  <div className="price">
-                    <span className="price-amount">{service.price}</span>
-                  </div>
-                </div>
 
-                <motion.button
-                  className="btn btn-primary service-btn"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Book Treatment
-                </motion.button>
               </div>
             </motion.div>
           ))}
@@ -123,6 +100,9 @@ const Services = () => {
           transition: all 0.3s ease;
           position: relative;
           overflow: hidden;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
         }
 
         .service-card:hover {
@@ -130,27 +110,6 @@ const Services = () => {
           border-color: var(--primary-rose);
         }
 
-        .service-card.popular {
-          border: 2px solid var(--primary-rose);
-          background: linear-gradient(135deg, var(--white) 0%, var(--secondary-blush) 100%);
-        }
-
-        .popular-badge {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-          background: linear-gradient(135deg, var(--primary-rose), var(--primary-gold));
-          color: var(--white);
-          padding: 0.5rem 1rem;
-          border-radius: 50px;
-          font-size: 0.8rem;
-          font-weight: 600;
-          display: flex;
-          align-items: center;
-          gap: 0.25rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
 
         .service-image {
           width: 100%;
@@ -172,20 +131,36 @@ const Services = () => {
           transform: scale(1.05);
         }
 
+        .service-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
         .service-content h3 {
           font-size: 1.4rem;
           margin-bottom: 1rem;
           color: var(--text-dark);
+          height: 2.8rem;
+          display: flex;
+          align-items: center;
         }
 
         .service-description {
           color: var(--text-light);
           margin-bottom: 1.5rem;
-          line-height: 1.6;
+          line-height: 1.5;
+          font-size: 0.9rem;
+          height: 6.4rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
         }
 
         .service-benefits {
           margin-bottom: 1.5rem;
+          flex: 1;
         }
 
         .service-benefits h4 {
@@ -199,6 +174,8 @@ const Services = () => {
           list-style: none;
           padding: 0;
           margin: 0;
+          height: 8.5rem;
+          overflow: hidden;
         }
 
         .benefit-item {
@@ -220,39 +197,7 @@ const Services = () => {
           font-size: 1rem;
         }
 
-        .service-details {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 2rem;
-          padding: 1rem 0;
-          border-top: 1px solid rgba(232, 180, 184, 0.2);
-        }
 
-        .duration {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          color: var(--text-light);
-          font-size: 0.9rem;
-        }
-
-        .price {
-          display: flex;
-          align-items: center;
-        }
-
-        .price-amount {
-          font-size: 1.8rem;
-          font-weight: 700;
-          color: var(--primary-rose);
-          font-family: 'Playfair Display', serif;
-        }
-
-        .service-btn {
-          width: 100%;
-          justify-content: center;
-        }
 
         @media (max-width: 768px) {
           .services-grid {
@@ -264,17 +209,7 @@ const Services = () => {
             padding: 1.5rem;
           }
 
-          .popular-badge {
-            position: static;
-            margin-bottom: 1rem;
-            align-self: flex-start;
-          }
 
-          .service-details {
-            flex-direction: column;
-            gap: 1rem;
-            text-align: center;
-          }
         }
       `}</style>
     </section>
