@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
-import { navigationData, companyInfo } from '../data/index.js';
+import { navItems, companyInfo } from '../data/index.js';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Header = () => {
           </motion.div>
 
           <nav className="desktop-nav">
-            {navigationData.navItems.map((item, index) => (
+            {navItems.map((item, index) => (
               <motion.a
                 key={item.label}
                 href={item.href}
@@ -107,7 +107,7 @@ const Header = () => {
           transition={{ duration: 0.3 }}
         >
           <div className="mobile-nav-content">
-            {navigationData.navItems.map((item, index) => (
+            {navItems.map((item, index) => (
               <motion.a
                 key={item.label}
                 href={item.href}

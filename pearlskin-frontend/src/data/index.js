@@ -1,167 +1,124 @@
-// ===================================
-// PEARLSKIN WEBSITE CONTENT DATA
-// ===================================
-// Edit this file to easily update all content across the website
-// Simply change text, images, prices, or descriptions here and they'll update everywhere!
+// PearlSkin Website Data
 
-// ===================================
-// SERVICES DATA
-// ===================================
+// Services Menu (Actual Services with Pricing)
+export const servicesMenu = {
+  eyelashes: [
+    { name: "Keratin Lash Lift", price: "$90" },
+    { name: "Just Lash Removal", price: "$20" },
+    { name: "Natural Lash Extension", price: "$100" },
+    { name: "Classic Lash Extension", price: "$130" },
+    { name: "Volume Lash Extension", price: "$150" },
+    { name: "Refilling within 2 Weeks", price: "Half Price" }
+  ],
+  skinTreatment: [
+    { name: "Pearl Restore Signature (90 mins)", price: "$135" },
+    { name: "Pearl Anti-Pollution (90 mins)", price: "$165" },
+    { name: "Pearl Aqua Peel Fusion (70 mins)", price: "$148" },
+    { name: "Pearl O2 Treatment (70 mins)", price: "$139" },
+    { name: "Pearl Nano Infusion (70 mins)", price: "$250" },
+    { name: "Pearl Lummi LED (90 mins)", price: "$139" },
+    { name: "Pearl Detoxifying (90 mins)", price: "$149" },
+    { name: "Pearl Refine (60 mins)", price: "$75" },
+    { name: "Pearl Mini (60 mins)", price: "$139" },
+    { name: "Ear Candling (30 mins)", price: "$45" },
+    { name: "Cupping Therapy (30 mins)", price: "$45" }
+  ]
+};
+
+// Treatment Benefits (Detailed service information for website)
 export const servicesData = [
   {
     id: 1,
-    title: "Anti-Aging Treatment Benefits",
+    category: "Anti-Aging",
+    title: "Anti-Aging Treatment",
     duration: "60 min",
     price: "$95",
-    imageUrl:
-      "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "Our signature anti-aging treatment targets fine lines, wrinkles, and skin elasticity. This specialized treatment employs advanced skincare technology to stimulate collagen production and cellular renewal. The treatment includes deep cleansing, exfoliation, targeted serums, and a firming mask that leaves your skin looking visibly younger and more radiant. Perfect for mature skin seeking rejuvenation.",
-    benefits: [
-      "Reduces fine lines and wrinkles",
-      "Stimulates collagen production",
-      "Improves skin elasticity",
-      "Enhances overall skin texture",
-      "Provides immediate lifting effect",
-    ],
+    imageUrl: "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Advanced treatment targeting fine lines and wrinkles. Includes deep cleansing, exfoliation, targeted serums, and firming mask for visibly younger, more radiant skin.",
+    benefits: ["Reduces fine lines", "Stimulates collagen", "Improves elasticity", "Enhances texture", "Immediate lifting effect"],
     popular: false,
   },
   {
     id: 2,
-    title: "HydraFacial Treatment Benefits",
+    category: "Hydration",
+    title: "HydraFacial Treatment",
     duration: "45 min",
     price: "$150",
-    imageUrl:
-      "https://images.pexels.com/photos/5240447/pexels-photo-5240447.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "The HydraFacial treatment is the latest technology for skin rejuvenation. This patent-approved treatment uses a unique vortex-fusion technology that cleanses, extracts, and hydrates simultaneously. The three-step process removes dead skin cells and extracts impurities while simultaneously delivering moisturizing serums into the skin. This treatment provides lasting results with no irritation or downtime.",
-    benefits: [
-      "Instant skin hydration",
-      "Deep pore cleansing",
-      "Improves skin tone",
-      "Reduces hyperpigmentation",
-      "Zero downtime required",
-    ],
+    imageUrl: "https://images.pexels.com/photos/5240447/pexels-photo-5240447.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Latest vortex-fusion technology that cleanses, extracts, and hydrates simultaneously. Provides lasting results with no downtime.",
+    benefits: ["Instant hydration", "Deep pore cleansing", "Improves tone", "Reduces pigmentation", "Zero downtime"],
     popular: true,
   },
   {
     id: 3,
-    title: "Facial Gua Sha Treatment Benefits",
+    category: "Traditional Therapy",
+    title: "Facial Gua Sha Treatment",
     duration: "75 min",
     price: "$120",
-    imageUrl:
-      "https://images.pexels.com/photos/7755477/pexels-photo-7755477.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "Facial Gua Sha enhances blood circulation, reduces puffiness, and promotes lymphatic drainage, giving your skin a natural glow. It helps relax facial muscles, softening fine lines and improving skin elasticity. Regular use can relieve tension, reduce inflammation, and even alleviate sinus discomfort. This ancient Chinese technique rejuvenates the face, leaving you refreshed, radiant, and restored. Perfect for a natural skincare routine!",
-    benefits: [
-      "Enhances blood circulation",
-      "Reduces facial puffiness",
-      "Promotes lymphatic drainage",
-      "Relieves muscle tension",
-      "Improves skin elasticity",
-    ],
+    imageUrl: "https://images.pexels.com/photos/7755477/pexels-photo-7755477.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Ancient Chinese technique that enhances circulation, reduces puffiness, and promotes lymphatic drainage for a natural glow.",
+    benefits: ["Enhanced circulation", "Reduces puffiness", "Lymphatic drainage", "Relieves tension", "Improves elasticity"],
     popular: false,
   },
   {
     id: 4,
-    title: "Cupping Therapy Benefits",
-    duration: "60 min",
-    price: "$110",
-    imageUrl:
-      "https://images.pexels.com/photos/7755448/pexels-photo-7755448.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "Cupping Therapy at Pearl Skin Center provides a powerful combination of ancient wisdom and modern therapeutic techniques. The specialized treatment uses gentle suction to enhance blood circulation, reduce muscle tension, and promote overall wellness. This non-invasive therapy helps to improve skin texture, reduce inflammation, and boost overall wellness. Experience immediate relief and lasting results through our expertly administered cupping sessions.",
-    benefits: [
-      "Improves blood circulation",
-      "Reduces muscle tension",
-      "Enhances skin texture",
-      "Promotes detoxification",
-      "Boosts overall wellness",
-    ],
+    category: "Wellness",
+    title: "Cupping Therapy",
+    duration: "30 min",
+    price: "$45",
+    imageUrl: "https://images.pexels.com/photos/7755448/pexels-photo-7755448.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Traditional cupping therapy to improve circulation and promote healing.",
+    benefits: ["Improves circulation", "Promotes healing", "Reduces tension", "Traditional therapy", "Wellness treatment"],
     popular: false,
   },
   {
     id: 5,
-    title: "LED Light Therapy Benefits",
+    category: "Light Therapy",
+    title: "LED Light Therapy",
     duration: "30 min",
     price: "$80",
-    imageUrl:
-      "https://images.pexels.com/photos/7755452/pexels-photo-7755452.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "LED Light Therapy utilizes specific wavelengths of light to stimulate cellular activity and promote healing. This non-invasive treatment penetrates deep into the skin to reduce inflammation, boost collagen production, and accelerate the healing process. Different light colors target specific skin concerns - red light for anti-aging, blue light for acne treatment, and near-infrared for deeper tissue healing.",
-    benefits: [
-      "Stimulates collagen production",
-      "Reduces inflammation",
-      "Accelerates healing process",
-      "Treats acne and blemishes",
-      "Non-invasive with no downtime",
-    ],
+    imageUrl: "https://images.pexels.com/photos/7755452/pexels-photo-7755452.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Non-invasive light therapy that stimulates cellular activity, reduces inflammation, and boosts collagen production.",
+    benefits: ["Stimulates collagen", "Reduces inflammation", "Accelerates healing", "Treats acne", "No downtime"],
     popular: false,
   },
   {
     id: 6,
+    category: "Organic Care",
     title: "Organic Botanical Facial",
     duration: "60 min",
     price: "$90",
-    imageUrl:
-      "https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "Our Organic Botanical Facial harnesses the power of nature with carefully selected organic ingredients. This gentle yet effective treatment is perfect for sensitive skin, using plant-based extracts, essential oils, and natural masks. The treatment includes gentle cleansing, herbal steam, organic exfoliation, and a customized botanical mask that nourishes and revitalizes your skin naturally.",
-    benefits: [
-      "100% organic ingredients",
-      "Perfect for sensitive skin",
-      "Natural detoxification",
-      "Deeply nourishing",
-      "Environmentally conscious",
-    ],
+    imageUrl: "https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Gentle treatment using 100% organic ingredients, plant extracts, and natural masks. Perfect for sensitive skin.",
+    benefits: ["100% organic", "Sensitive skin friendly", "Natural detox", "Deeply nourishing", "Eco-conscious"],
     popular: false,
   },
 ];
 
-// ===================================
-// GALLERY DATA
-// ===================================
 export const galleryData = [
   {
     id: 1,
-    category: "studio",
     title: "Serene Treatment Room",
-    description:
-      "Our peaceful treatment rooms designed for ultimate relaxation",
-    imageUrl:
-      "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800",
-    aspect: "square",
-    alt: "Elegant spa treatment room with soft lighting and comfortable bed",
+    imageUrl: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800",
+    alt: "Elegant spa treatment room",
   },
   {
     id: 2,
-    category: "treatments",
     title: "Professional Facial Treatment",
-    description: "Advanced skincare technology for radiant results",
-    imageUrl:
-      "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=800",
-    aspect: "portrait",
-    alt: "Woman receiving professional facial treatment at spa",
+    imageUrl: "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=800",
+    alt: "Woman receiving facial treatment",
   },
 ];
 
-// ===================================
-// COMPANY INFORMATION
-// ===================================
 export const companyInfo = {
   name: "PearlSkin",
   tagline: "Aesthetic Studio",
-  description:
-    "Your journey to radiant, healthy skin begins here. Experience the perfect blend of luxury, science, and personalized care in our serene wellness sanctuary.",
+  description: "Your journey to radiant, healthy skin begins here. Experience luxury, science, and personalized care in our serene wellness sanctuary.",
 
   contact: {
     phone: "+19172370270",
     email: "lindazhen628@gmail.com",
-    address: {
-      street: "214 Grand St",
-      suite: "2 FL",
-      city: "New York NY 10013",
-    },
+    address: "214 Grand St, 2 FL, New York NY 10013",
   },
 
   hours: {
@@ -184,9 +141,6 @@ export const companyInfo = {
   },
 };
 
-// ===================================
-// HERO SECTION DATA
-// ===================================
 export const heroData = {
   badge: "Premium Skincare Experience",
   title: "Reveal Your",
@@ -218,17 +172,11 @@ export const heroData = {
   },
 };
 
-// ===================================
-// ABOUT SECTION DATA
-// ===================================
 export const aboutData = {
   title: "About PearlSkin",
   lead: "Welcome to PearlSkin Aesthetic Studio, where beauty meets science in a sanctuary of tranquility and wellness.",
 
-  description: [
-    "Founded with a passion for enhancing natural beauty, we specialize in advanced facial treatments that combine traditional techniques with the latest innovations in skincare technology. Our serene studio provides a peaceful escape from daily life, where you can indulge in transformative treatments designed to reveal your skin's natural radiance.",
-    "At PearlSkin, we believe that healthy, glowing skin is the foundation of confidence. Our expert aestheticians work closely with each client to develop personalized treatment plans that address specific skin concerns while promoting long-term skin health and vitality.",
-  ],
+  description: "We specialize in advanced facial treatments combining traditional techniques with modern skincare technology. Our expert aestheticians develop personalized treatment plans for long-term skin health and vitality.",
 
   founderQuote: {
     text: "Beauty is about feeling confident in your own skin, and we're here to help you achieve that.",
@@ -258,30 +206,14 @@ export const aboutData = {
   ],
 };
 
-// ===================================
-// NAVIGATION DATA
-// ===================================
-export const navigationData = {
-  navItems: [
-    { label: "Home", href: "#home" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
-  ],
+export const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "About", href: "#about" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Contact", href: "#contact" },
+];
 
-  quickLinks: [
-    { label: "Home", href: "#home" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
-  ],
-};
-
-// ===================================
-// CONTACT FORM DATA
-// ===================================
 export const contactData = {
   title: "Book Your Appointment",
   description:
@@ -290,13 +222,14 @@ export const contactData = {
   formTitle: "Schedule Your Visit",
 
   services: [
-    "Classic European Facial",
-    "HydraFacial MD",
-    "Anti-Aging Facial",
-    "Organic Botanical Facial",
-    "Acne Treatment Facial",
-    "Microdermabrasion",
-    "Consultation",
+    "Keratin Lash Lift",
+    "Classic Lash Extension",
+    "Volume Lash Extension",
+    "Pearl Restore Signature",
+    "Pearl Aqua Peel Fusion",
+    "Pearl Refine",
+    "Cupping Therapy",
+    "Consultation"
   ],
 
   timeSlots: [
@@ -315,21 +248,17 @@ export const contactData = {
     {
       icon: "MapPin",
       title: "Visit Us",
-      details: [
-        "123 Beauty Boulevard",
-        "Suite 456, Wellness Center",
-        "City, State 12345",
-      ],
+      details: ["214 Grand St, 2 FL", "New York NY 10013"],
     },
     {
       icon: "Phone",
       title: "Call Us",
-      details: ["(123) 456-7890", "Text us for quick questions"],
+      details: ["+19172370270", "Text us for quick questions"],
     },
     {
       icon: "Mail",
       title: "Email Us",
-      details: ["hello@pearlskin.com", "We respond within 24 hours"],
+      details: ["lindazhen628@gmail.com", "We respond within 24 hours"],
     },
     {
       icon: "Clock",
@@ -339,19 +268,3 @@ export const contactData = {
   ],
 };
 
-// ===================================
-// HOW TO USE THIS FILE:
-// ===================================
-/*
-1. To change service prices: Edit the "price" field in servicesData
-2. To update service descriptions: Edit the "description" field
-3. To change images: Replace the "imageUrl" with new Pexels URLs
-4. To modify contact info: Update the companyInfo.contact section
-5. To change business hours: Edit companyInfo.hours
-6. To add/remove services: Add/remove objects in servicesData array
-7. To update gallery images: Modify galleryData array
-8. To change hero text: Edit heroData section
-9. To update about section: Modify aboutData section
-
-Simply save this file after making changes and they'll appear on your website!
-*/

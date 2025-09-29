@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter, Heart } from 'lucide-react';
-import { navigationData, companyInfo } from '../data/index.js';
+import { navItems, companyInfo } from '../data/index.js';
 
 const Footer = () => {
   const socialLinks = [
@@ -59,7 +59,7 @@ const Footer = () => {
           >
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              {navigationData.quickLinks.map((link, index) => (
+              {navItems.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
@@ -88,9 +88,7 @@ const Footer = () => {
               <div className="contact-item">
                 <MapPin size={18} />
                 <div>
-                  <p>{companyInfo.contact.address.street}</p>
-                  <p>{companyInfo.contact.address.suite}</p>
-                  <p>{companyInfo.contact.address.city}</p>
+                  <p>{companyInfo.contact.address}</p>
                 </div>
               </div>
               <div className="contact-item">
