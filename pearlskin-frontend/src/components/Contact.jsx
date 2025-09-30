@@ -5,15 +5,6 @@ import { contactData, companyInfo } from "../data/index.js";
 const Contact = () => {
   const contactInfo = [
     {
-      icon: <MapPin size={24} />,
-      title: "Visit Us",
-      details: [
-        companyInfo.contact.address.street,
-        companyInfo.contact.address.suite,
-        companyInfo.contact.address.city,
-      ],
-    },
-    {
       icon: <Phone size={24} />,
       title: "Call Us",
       details: [companyInfo.contact.phone, "Text us for quick questions"],
@@ -45,7 +36,6 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2>{contactData.title}</h2>
-          <p>{contactData.description}</p>
         </motion.div>
 
         <div className="contact-content">
@@ -58,7 +48,10 @@ const Contact = () => {
           >
             <div className="cta-header">
               <Calendar size={32} />
-              <h3>Ready to Book Your Appointment?</h3>
+              <h3>
+                To schedule your treatment, please call us directly — our team
+                will be happy to assist you.
+              </h3>
             </div>
 
             <div className="cta-content">
@@ -79,16 +72,6 @@ const Contact = () => {
                     {companyInfo.contact.phone}
                   </a>
                 </div>
-              </div>
-
-              <div className="cta-benefits">
-                <h4>Why call instead?</h4>
-                <ul>
-                  <li>Instant confirmation</li>
-                  <li>Personalized service recommendations</li>
-                  <li>Flexible scheduling options</li>
-                  <li>Answer any questions you have</li>
-                </ul>
               </div>
 
               <motion.a

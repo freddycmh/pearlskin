@@ -8,7 +8,7 @@ export const servicesMenu = {
     { name: "Natural Lash Extension", price: "$100" },
     { name: "Classic Lash Extension", price: "$130" },
     { name: "Volume Lash Extension", price: "$150" },
-    { name: "Refilling within 2 Weeks", price: "Half Price" }
+    { name: "Refilling within 2 Weeks", price: "Half Price" },
   ],
   skinTreatment: [
     { name: "Pearl Restore Signature (90 mins)", price: "$135" },
@@ -21,8 +21,8 @@ export const servicesMenu = {
     { name: "Pearl Refine (60 mins)", price: "$75" },
     { name: "Pearl Mini (60 mins)", price: "$139" },
     { name: "Ear Candling (30 mins)", price: "$45" },
-    { name: "Cupping Therapy (30 mins)", price: "$45" }
-  ]
+    { name: "Cupping Therapy (30 mins)", price: "$45" },
+  ],
 };
 
 // Treatment Benefits (Detailed service information for website)
@@ -32,9 +32,17 @@ export const servicesData = [
     category: "Environmental Protection",
     title: "Anti Pollution Treatment",
     duration: "90 min",
-    imageUrl: "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Advanced treatment to protect and repair skin damage caused by environmental pollutants and daily exposure to toxins.",
-    benefits: ["Removes pollution buildup", "Strengthens skin barrier", "Antioxidant protection", "Repairs environmental damage", "Prevents premature aging"],
+    imageUrl:
+      "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:
+      "An advanced skin therapy formulated to repair cellular damage and strengthen the skin's defense against environmental pollutants and everyday toxin exposure.",
+    benefits: [
+      "Removes pollution buildup",
+      "Strengthens skin barrier",
+      "Antioxidant protection",
+      "Repairs environmental damage",
+      "Prevents premature aging",
+    ],
     popular: false,
   },
   {
@@ -42,9 +50,17 @@ export const servicesData = [
     category: "Light Therapy",
     title: "Lummi LED Treatment",
     duration: "90 min",
-    imageUrl: "https://images.pexels.com/photos/5240447/pexels-photo-5240447.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Advanced LED light therapy that uses specific wavelengths to target various skin concerns and promote cellular regeneration.",
-    benefits: ["Stimulates collagen production", "Reduces acne bacteria", "Improves skin texture", "Minimizes fine lines", "No downtime required"],
+    imageUrl:
+      "https://images.pexels.com/photos/5240447/pexels-photo-5240447.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:
+      "Advanced LED light therapy uses precise wavelengths to target specific skin concerns and stimulate cellular regeneration.",
+    benefits: [
+      "Stimulates collagen production",
+      "Reduces acne bacteria",
+      "Improves skin texture",
+      "Minimizes fine lines",
+      "No downtime required",
+    ],
     popular: true,
   },
   {
@@ -52,9 +68,17 @@ export const servicesData = [
     category: "Advanced Technology",
     title: "Nano Infusion Treatment",
     duration: "70 min",
-    imageUrl: "https://images.pexels.com/photos/7755477/pexels-photo-7755477.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Cutting-edge nano-technology treatment that delivers active ingredients deep into the skin layers for maximum absorption.",
-    benefits: ["Deep ingredient penetration", "Enhanced product absorption", "Immediate visible results", "Long-lasting hydration", "Premium technology"],
+    imageUrl:
+      "https://images.pexels.com/photos/7755477/pexels-photo-7755477.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:
+      "This advanced nanotechnology treatment enhances the delivery of active ingredients into the deeper layers of the skin, ensuring maximum absorption and efficacy.",
+    benefits: [
+      "Deep ingredient penetration",
+      "Enhanced product absorption",
+      "Immediate visible results",
+      "Long-lasting hydration",
+      "Premium technology",
+    ],
     popular: false,
   },
   {
@@ -62,9 +86,17 @@ export const servicesData = [
     category: "Purification",
     title: "Detoxifying Treatment",
     duration: "90 min",
-    imageUrl: "https://images.pexels.com/photos/7755448/pexels-photo-7755448.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Deep cleansing treatment that purifies and detoxifies skin from impurities, excess oils, and environmental toxins.",
-    benefits: ["Deep pore cleansing", "Removes toxins", "Balances oil production", "Clarifies complexion", "Refreshes skin"],
+    imageUrl:
+      "https://images.pexels.com/photos/7755448/pexels-photo-7755448.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:
+      "This advanced detoxifying treatment purifies the skin by eliminating impurities, reducing excess sebum, and protecting against environmental pollutants.",
+    benefits: [
+      "Deep pore cleansing",
+      "Removes toxins",
+      "Balances oil production",
+      "Clarifies complexion",
+      "Refreshes skin",
+    ],
     popular: false,
   },
   {
@@ -72,9 +104,17 @@ export const servicesData = [
     category: "Traditional Therapy",
     title: "Cupping Therapy",
     duration: "30 min",
-    imageUrl: "https://images.pexels.com/photos/7755452/pexels-photo-7755452.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Ancient therapeutic technique using gentle suction to improve circulation, reduce tension, and promote natural healing.",
-    benefits: ["Improves blood circulation", "Reduces muscle tension", "Promotes lymphatic drainage", "Relieves stress", "Natural healing"],
+    imageUrl:
+      "https://images.pexels.com/photos/7755452/pexels-photo-7755452.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:
+      "This ancient therapeutic technique employs controlled suction to improve blood flow, reduce muscular tension, and promote the body's natural healing processes.",
+    benefits: [
+      "Improves blood circulation",
+      "Reduces muscle tension",
+      "Promotes lymphatic drainage",
+      "Relieves stress",
+      "Natural healing",
+    ],
     popular: false,
   },
   {
@@ -82,9 +122,17 @@ export const servicesData = [
     category: "Traditional Therapy",
     title: "Facial Gua Sha Therapy",
     duration: "75 min",
-    imageUrl: "https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Traditional Chinese facial massage technique using smooth stone tools to sculpt, lift, and enhance natural facial contours.",
-    benefits: ["Natural face lifting", "Reduces facial puffiness", "Improves skin elasticity", "Enhances circulation", "Relaxing experience"],
+    imageUrl:
+      "https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:
+      "This traditional Chinese massage technique utilizes smooth stone tools to enhance circulation, sculpt facial contours, and promote a lifted, rejuvenated appearance.",
+    benefits: [
+      "Natural face lifting",
+      "Reduces facial puffiness",
+      "Improves skin elasticity",
+      "Enhances circulation",
+      "Relaxing experience",
+    ],
     popular: false,
   },
 ];
@@ -93,13 +141,15 @@ export const galleryData = [
   {
     id: 1,
     title: "Serene Treatment Room",
-    imageUrl: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800",
+    imageUrl:
+      "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Elegant spa treatment room",
   },
   {
     id: 2,
     title: "Professional Facial Treatment",
-    imageUrl: "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=800",
+    imageUrl:
+      "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Woman receiving facial treatment",
   },
 ];
@@ -107,7 +157,8 @@ export const galleryData = [
 export const companyInfo = {
   name: "PearlSkin",
   tagline: "Aesthetic Studio",
-  description: "Your journey to radiant, healthy skin begins here. Experience luxury, science, and personalized care in our serene wellness sanctuary.",
+  description:
+    "Your journey to radiant, healthy skin begins here. Experience luxury, science, and personalized care in our serene wellness sanctuary.",
 
   contact: {
     phone: "+19172370270",
@@ -123,7 +174,7 @@ export const companyInfo = {
 
   stats: {
     happyClients: "500+",
-    experience: "3+",
+    experience: "10+",
     certifications: "15+",
     rating: "4.9",
   },
@@ -170,7 +221,8 @@ export const aboutData = {
   title: "About PearlSkin",
   lead: "Welcome to PearlSkin Aesthetic Studio, where beauty meets science in a sanctuary of tranquility and wellness.",
 
-  description: "We specialize in advanced facial treatments combining traditional techniques with modern skincare technology. Our expert aestheticians develop personalized treatment plans for long-term skin health and vitality.",
+  description:
+    "We specialize in advanced facial treatments combining traditional techniques with modern skincare technology. Our expert aestheticians develop personalized treatment plans for long-term skin health and vitality.",
 
   founderQuote: {
     text: "Beauty is about feeling confident in your own skin, and we're here to help you achieve that.",
@@ -202,10 +254,11 @@ export const aboutData = {
 
 export const navItems = [
   { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
+  { label: "Treatment Benefits", href: "#services" },
   { label: "Pricing", href: "#pricing" },
   { label: "About", href: "#about" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Policy", href: "#policy" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -224,7 +277,7 @@ export const contactData = {
     "Pearl Aqua Peel Fusion",
     "Pearl Refine",
     "Cupping Therapy",
-    "Consultation"
+    "Consultation",
   ],
 
   timeSlots: [
@@ -262,4 +315,3 @@ export const contactData = {
     },
   ],
 };
-

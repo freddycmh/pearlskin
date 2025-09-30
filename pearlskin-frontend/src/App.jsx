@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Pricing from './components/Pricing';
 import About from './components/About';
 import Gallery from './components/Gallery';
+import Policy from './components/Policy';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
@@ -21,10 +22,11 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Services />
         <Pricing />
+        <Services />
         <About />
         <Gallery />
+        <Policy />
         <Contact />
       </main>
       <Footer />

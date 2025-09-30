@@ -1,18 +1,11 @@
-import { motion } from 'framer-motion';
-import { Sparkles, Star, Calendar } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Sparkles, Star } from "lucide-react";
 
 const Hero = () => {
   const scrollToContact = () => {
-    const element = document.querySelector('#contact');
+    const element = document.querySelector("#contact");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const scrollToServices = () => {
-    const element = document.querySelector('#services');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -46,8 +39,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Reveal Your
-              <span className="gradient-text"> Natural Radiance</span>
+              Discover Your
+              <span className="gradient-text"> Glow at Pearl Skin</span>
             </motion.h1>
 
             <motion.p
@@ -57,38 +50,9 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
             >
               Transform your skin with our luxurious facial treatments and
-              personalized skincare solutions. Experience the art of beauty
-              in our serene, spa-like environment.
+              personalized skincare solutions. Experience the art of beauty in
+              our serene, spa-like environment.
             </motion.p>
-
-            <motion.div
-              className="hero-stats"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.0 }}
-            >
-              <div className="stat">
-                <Star size={20} />
-                <span>
-                  <strong>4.9/5</strong>
-                  <small>Client Rating</small>
-                </span>
-              </div>
-              <div className="stat">
-                <Sparkles size={20} />
-                <span>
-                  <strong>500+</strong>
-                  <small>Happy Clients</small>
-                </span>
-              </div>
-              <div className="stat">
-                <Calendar size={20} />
-                <span>
-                  <strong>3+</strong>
-                  <small>Years Experience</small>
-                </span>
-              </div>
-            </motion.div>
 
             <motion.div
               className="hero-actions"
@@ -103,14 +67,6 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 Book Consultation
-              </motion.button>
-              <motion.button
-                className="btn btn-secondary"
-                onClick={scrollToServices}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                View Services
               </motion.button>
             </motion.div>
           </motion.div>
@@ -128,12 +84,12 @@ const Hero = () => {
                     className="floating-element"
                     animate={{
                       y: [-10, 10, -10],
-                      rotate: [0, 5, 0]
+                      rotate: [0, 5, 0],
                     }}
                     transition={{
                       duration: 4,
                       repeat: Infinity,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                   >
                     <Sparkles size={24} />
@@ -142,13 +98,13 @@ const Hero = () => {
                     className="floating-element second"
                     animate={{
                       y: [10, -10, 10],
-                      rotate: [0, -5, 0]
+                      rotate: [0, -5, 0],
                     }}
                     transition={{
                       duration: 3,
                       repeat: Infinity,
                       ease: "easeInOut",
-                      delay: 1
+                      delay: 1,
                     }}
                   >
                     <Star size={20} />
@@ -171,7 +127,11 @@ const Hero = () => {
           align-items: center;
           position: relative;
           overflow: hidden;
-          background: linear-gradient(135deg, var(--primary-cream) 0%, var(--secondary-blush) 100%);
+          background: linear-gradient(
+            135deg,
+            var(--primary-cream) 0%,
+            var(--secondary-blush) 100%
+          );
         }
 
         .hero-background {
@@ -189,7 +149,11 @@ const Hero = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: radial-gradient(ellipse at center, transparent 0%, rgba(232, 180, 184, 0.1) 70%);
+          background: radial-gradient(
+            ellipse at center,
+            transparent 0%,
+            rgba(232, 180, 184, 0.1) 70%
+          );
         }
 
         .pattern-overlay {
@@ -198,8 +162,16 @@ const Hero = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background-image: radial-gradient(circle at 25% 25%, rgba(232, 180, 184, 0.1) 2px, transparent 2px),
-                            radial-gradient(circle at 75% 75%, rgba(157, 176, 168, 0.1) 1px, transparent 1px);
+          background-image: radial-gradient(
+              circle at 25% 25%,
+              rgba(232, 180, 184, 0.1) 2px,
+              transparent 2px
+            ),
+            radial-gradient(
+              circle at 75% 75%,
+              rgba(157, 176, 168, 0.1) 1px,
+              transparent 1px
+            );
           background-size: 50px 50px, 30px 30px;
           opacity: 0.5;
         }
@@ -242,7 +214,11 @@ const Hero = () => {
         }
 
         .gradient-text {
-          background: linear-gradient(135deg, var(--primary-rose), var(--primary-gold));
+          background: linear-gradient(
+            135deg,
+            var(--primary-rose),
+            var(--primary-gold)
+          );
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -310,7 +286,11 @@ const Hero = () => {
         .image-placeholder {
           width: 100%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(232, 180, 184, 0.2));
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.9),
+            rgba(232, 180, 184, 0.2)
+          );
           border-radius: 50%;
           position: relative;
           box-shadow: var(--shadow-heavy);
@@ -364,7 +344,7 @@ const Hero = () => {
         }
 
         .face-outline::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 30%;
           left: 25%;
@@ -375,7 +355,7 @@ const Hero = () => {
         }
 
         .face-outline::after {
-          content: '';
+          content: "";
           position: absolute;
           top: 30%;
           right: 25%;
@@ -392,14 +372,19 @@ const Hero = () => {
           transform: translate(-50%, -50%);
           width: 150px;
           height: 150px;
-          background: radial-gradient(circle, var(--primary-rose) 0%, transparent 70%);
+          background: radial-gradient(
+            circle,
+            var(--primary-rose) 0%,
+            transparent 70%
+          );
           border-radius: 50%;
           opacity: 0.3;
           animation: pulse 3s ease-in-out infinite;
         }
 
         @keyframes pulse {
-          0%, 100% {
+          0%,
+          100% {
             transform: translate(-50%, -50%) scale(1);
             opacity: 0.3;
           }

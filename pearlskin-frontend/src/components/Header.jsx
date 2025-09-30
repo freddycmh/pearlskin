@@ -63,20 +63,9 @@ const Header = () => {
           </nav>
 
           <div className="header-actions">
-            <motion.a
-              href={`tel:${companyInfo.contact.phone}`}
-              className="phone-link"
-              whileHover={{ scale: 1.05 }}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <Phone size={20} />
-              <span>{companyInfo.contact.phone}</span>
-            </motion.a>
-
             <motion.button
               className="btn btn-primary"
+              onClick={() => scrollToSection('#contact')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, x: 20 }}

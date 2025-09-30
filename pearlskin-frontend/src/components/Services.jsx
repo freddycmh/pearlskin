@@ -13,11 +13,7 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2>Our Signature Treatments</h2>
-          <p>
-            Indulge in our carefully curated selection of facial treatments,
-            each designed to address your unique skin needs and enhance your natural beauty.
-          </p>
+          <h2>Treatment Benefits</h2>
         </motion.div>
 
         <div className="services-grid">

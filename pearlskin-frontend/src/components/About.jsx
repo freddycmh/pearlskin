@@ -3,10 +3,9 @@ import { Award, Users, Clock, Heart, Sparkles, Star } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: <Users size={24} />, number: "500+", label: "Happy Clients" },
     { icon: <Clock size={24} />, number: "3+", label: "Years Experience" },
     { icon: <Award size={24} />, number: "15+", label: "Certifications" },
-    { icon: <Star size={24} />, number: "4.9", label: "Average Rating" }
+    { icon: <Star size={24} />, number: "5", label: "Average Rating" }
   ];
 
   return (
@@ -195,8 +194,8 @@ const About = () => {
 
         .stats-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 2rem;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 3rem;
         }
 
         .stat-item {
