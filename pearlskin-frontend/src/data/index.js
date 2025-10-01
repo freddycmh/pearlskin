@@ -206,7 +206,7 @@ export const heroData = {
     },
     {
       icon: "Calendar",
-      number: "3+",
+      number: "25+",
       label: "Years Experience",
     },
   ],
@@ -255,7 +255,7 @@ export const aboutData = {
 export const navItems = [
   { label: "Home", href: "#home" },
   { label: "Treatment Benefits", href: "#services" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Services", href: "#pricing" },
   { label: "About", href: "#about" },
   { label: "Gallery", href: "#gallery" },
   { label: "Policy", href: "#policy" },

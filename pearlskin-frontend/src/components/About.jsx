@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import { Award, Users, Clock, Heart, Sparkles, Star } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Award, Users, Clock, Heart, Sparkles, Star } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: <Clock size={24} />, number: "3+", label: "Years Experience" },
+    { icon: <Clock size={24} />, number: "25+", label: "Years Experience" },
     { icon: <Award size={24} />, number: "15+", label: "Certifications" },
-    { icon: <Star size={24} />, number: "5", label: "Average Rating" }
+    { icon: <Star size={24} />, number: "5", label: "Average Rating" },
   ];
 
   return (
@@ -20,20 +20,25 @@ const About = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2>About PearlSkin</h2>
+              <h2>About Pearl Skin</h2>
               <p className="lead">
-                Welcome to PearlSkin Aesthetic Studio, where beauty meets science in a sanctuary of tranquility and wellness.
+                Welcome to Pearl Skin Care Center, where beauty meets science in
+                a sanctuary of tranquility and wellness.
               </p>
               <p>
-                Founded with a passion for enhancing natural beauty, we specialize in advanced facial treatments
-                that combine traditional techniques with the latest innovations in skincare technology. Our serene
-                studio provides a peaceful escape from daily life, where you can indulge in transformative treatments
+                Founded with a passion for enhancing natural beauty, we
+                specialize in advanced facial treatments that combine
+                traditional techniques with the latest innovations in skincare
+                technology. Our serene studio provides a peaceful escape from
+                daily life, where you can indulge in transformative treatments
                 designed to reveal your skin's natural radiance.
               </p>
               <p>
-                At PearlSkin, we believe that healthy, glowing skin is the foundation of confidence. Our expert
-                aestheticians work closely with each client to develop personalized treatment plans that address
-                specific skin concerns while promoting long-term skin health and vitality.
+                At PearlSkin, we believe that healthy, glowing skin is the
+                foundation of confidence. Our expert aestheticians work closely
+                with each client to develop personalized treatment plans that
+                address specific skin concerns while promoting long-term skin
+                health and vitality.
               </p>
             </motion.div>
 
@@ -84,7 +89,12 @@ const About = () => {
 
       <style jsx>{`
         .about {
-          background: linear-gradient(135deg, var(--primary-cream) 0%, var(--white) 50%, var(--secondary-blush) 100%);
+          background: linear-gradient(
+            135deg,
+            var(--primary-cream) 0%,
+            var(--white) 50%,
+            var(--secondary-blush) 100%
+          );
           position: relative;
           overflow: hidden;
         }
@@ -134,7 +144,11 @@ const About = () => {
         .image-placeholder {
           width: 100%;
           height: 400px;
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(232, 180, 184, 0.3));
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.9),
+            rgba(232, 180, 184, 0.3)
+          );
           border-radius: 20px;
           position: relative;
           box-shadow: var(--shadow-medium);
@@ -154,14 +168,18 @@ const About = () => {
         .treatment-bed {
           width: 100%;
           height: 60px;
-          background: linear-gradient(135deg, var(--primary-sage), var(--primary-rose));
+          background: linear-gradient(
+            135deg,
+            var(--primary-sage),
+            var(--primary-rose)
+          );
           border-radius: 30px;
           opacity: 0.7;
           position: relative;
         }
 
         .treatment-bed::before {
-          content: '';
+          content: "";
           position: absolute;
           top: -10px;
           left: 20px;
@@ -178,7 +196,11 @@ const About = () => {
           transform: translate(-50%, -50%);
           width: 150px;
           height: 150px;
-          background: radial-gradient(circle, var(--primary-rose) 0%, transparent 70%);
+          background: radial-gradient(
+            circle,
+            var(--primary-rose) 0%,
+            transparent 70%
+          );
           border-radius: 50%;
           opacity: 0.2;
           animation: pulse 4s ease-in-out infinite;
@@ -208,7 +230,11 @@ const About = () => {
           justify-content: center;
           width: 50px;
           height: 50px;
-          background: linear-gradient(135deg, var(--primary-rose), var(--primary-gold));
+          background: linear-gradient(
+            135deg,
+            var(--primary-rose),
+            var(--primary-gold)
+          );
           color: var(--white);
           border-radius: 50%;
           margin-bottom: 1rem;
@@ -218,7 +244,7 @@ const About = () => {
           font-size: 2.5rem;
           font-weight: 700;
           color: var(--text-dark);
-          font-family: 'Playfair Display', serif;
+          font-family: "Playfair Display", serif;
           margin-bottom: 0.5rem;
         }
 
@@ -231,7 +257,8 @@ const About = () => {
         }
 
         @keyframes pulse {
-          0%, 100% {
+          0%,
+          100% {
             transform: translate(-50%, -50%) scale(1);
             opacity: 0.2;
           }
