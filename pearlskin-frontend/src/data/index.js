@@ -30,7 +30,7 @@ export const servicesData = [
   {
     id: 1,
     category: "Environmental Protection",
-    title: "Anti Pollution Treatment",
+    title: "Anti-Pollution Treatment",
     duration: "90 min",
     imageUrl:
       "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -254,8 +254,8 @@ export const aboutData = {
 
 export const navItems = [
   { label: "Home", href: "#home" },
-  { label: "Treatment Benefits", href: "#services" },
   { label: "Services", href: "#pricing" },
+  { label: "Treatment Benefits", href: "#services" },
   { label: "About", href: "#about" },
   { label: "Gallery", href: "#gallery" },
   { label: "Policy", href: "#policy" },

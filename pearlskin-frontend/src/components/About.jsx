@@ -23,7 +23,7 @@ const About = () => {
               <h2>About Pearl Skin</h2>
               <p className="lead">
                 Welcome to Pearl Skin Care Center, where beauty meets science in
-                a sanctuary of tranquility and wellness.
+                a sanctuary of tranquility and wellness
               </p>
               <p>
                 Founded with a passion for enhancing natural beauty, we
@@ -34,11 +34,11 @@ const About = () => {
                 designed to reveal your skin's natural radiance.
               </p>
               <p>
-                At PearlSkin, we believe that healthy, glowing skin is the
-                foundation of confidence. Our expert aestheticians work closely
-                with each client to develop personalized treatment plans that
-                address specific skin concerns while promoting long-term skin
-                health and vitality.
+                At Pearl Skin Care Center, we believe that healthy, glowing skin
+                is an essential part of looking and feeling your best. Our
+                expert aesthetician works closely with each client to create
+                personalized treatment plans that address specific concerns
+                while promoting long-term skin health and vitality.
               </p>
             </motion.div>
 

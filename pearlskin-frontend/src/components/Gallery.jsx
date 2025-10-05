@@ -1,27 +1,28 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, ZoomIn } from 'lucide-react';
-import { galleryData } from '../data/index.js';
-import './Gallery.css';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, ZoomIn } from "lucide-react";
+import { galleryData } from "../data/index.js";
+import "./Gallery.css";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const [filter, setFilter] = useState('all');
-  const categories = ['all', 'studio', 'treatments', 'products'];
+  const [filter, setFilter] = useState("all");
+  const categories = ["all", "studio", "treatments"];
 
-  const filteredImages = filter === 'all'
-    ? galleryData
-    : galleryData.filter(img => img.category === filter);
+  const filteredImages =
+    filter === "all"
+      ? galleryData
+      : galleryData.filter((img) => img.category === filter);
 
   const openLightbox = (image) => {
     setSelectedImage(image);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
 
   const closeLightbox = () => {
     setSelectedImage(null);
-    document.body.style.overflow = 'unset';
+    document.body.style.overflow = "unset";
   };
 
   return (
@@ -52,7 +53,7 @@ const Gallery = () => {
           {categories.map((category) => (
             <motion.button
               key={category}
-              className={`filter-btn ${filter === category ? 'active' : ''}`}
+              className={`filter-btn ${filter === category ? "active" : ""}`}
               onClick={() => setFilter(category)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -138,7 +139,9 @@ const Gallery = () => {
                 <div className="lightbox-info">
                   <h3>{selectedImage.title}</h3>
                   <p>{selectedImage.description}</p>
-                  <span className="lightbox-category">{selectedImage.category}</span>
+                  <span className="lightbox-category">
+                    {selectedImage.category}
+                  </span>
                 </div>
               </motion.div>
             </motion.div>
