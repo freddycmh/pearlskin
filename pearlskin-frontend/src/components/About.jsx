@@ -23,7 +23,7 @@ const About = () => {
               <h2>About Pearl Skin</h2>
               <p className="lead">
                 Welcome to Pearl Skin Care Center, where beauty meets science in
-                a sanctuary of tranquility and wellness
+                a sanctuary of tranquility and wellness.
               </p>
               <p>
                 Founded with a passion for enhancing natural beauty, we

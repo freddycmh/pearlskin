@@ -48,17 +48,14 @@ const Contact = () => {
           >
             <div className="cta-header">
               <Calendar size={32} />
-              <h3>
-                To schedule your treatment, please call us directly — our team
-                will be happy to assist you.
-              </h3>
+              <h3>Ready to Book Your Appointment?</h3>
             </div>
 
             <div className="cta-content">
               <p className="cta-message">
-                Skip the forms and get personalized service! Call us directly to
-                schedule your treatment. Our friendly staff will help you choose
-                the perfect service and find the best time that works for you.
+                Call us directly to schedule your treatment. Our friendly team
+                will help you select the perfect service and find a time that
+                works best for you.
               </p>
 
               <div className="cta-phone">
